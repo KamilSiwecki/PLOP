@@ -53,7 +53,13 @@ namespace WpfApplication1
                 {
                     comboBox10.Items.Add(i);
                 }
-                
+                comboBox11.Items.Add(i);
+                comboBox12.Items.Add(i);
+                comboBox13.Items.Add(i);
+                comboBox14.Items.Add(i);
+                comboBox15.Items.Add(i);
+                comboBox16.Items.Add(i);
+
             }
             
         }
@@ -62,7 +68,7 @@ namespace WpfApplication1
         {
             if(comboBox0.Text!= comboBox1.Text)
                 {
-                    string[] tekst = new string[11];
+                    string[] tekst = new string[17];
                     tekst[0] = comboBox0.Text;
                     tekst[1] = comboBox1.Text;
                     tekst[2] = comboBox2.Text;
@@ -74,7 +80,13 @@ namespace WpfApplication1
                     tekst[8] = comboBox8.Text;
                     tekst[9] = comboBox9.Text;
                     tekst[10] = comboBox10.Text;
-                    System.IO.File.WriteAllLines(@"C:\Users\pitek\Documents\Visual Studio 2015\Projects\baza\baza\bin\Debug\sklad.txt", tekst);
+                    tekst[11] = comboBox11.Text;
+                    tekst[12] = comboBox12.Text;
+                    tekst[13] = comboBox13.Text;
+                    tekst[14] = comboBox14.Text;
+                    tekst[15] = comboBox15.Text;
+                    tekst[16] = comboBox16.Text;
+                    System.IO.File.WriteAllLines(@"..\Debug\sklad.txt", tekst);
                     this.Close();
                 }
                 else

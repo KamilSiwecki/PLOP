@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using baza;
 using System.IO;
+using System.Collections.ObjectModel;
 
 namespace WpfApplication1
 {
@@ -21,12 +22,15 @@ namespace WpfApplication1
     /// </summary>
     public partial class OstatniMecz : Window
     {
+        ListaZawodnikow z;
+        ObservableCollection<zawodnik> sklad;
         public OstatniMecz()
         {
             InitializeComponent();
+            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\sklad.txt");
             ListaZawodnikow ostatni = new ListaZawodnikow();
             List<List<string>> punkty = new List<List<string>>();
-            string[] linie = File.ReadAllLines(@"C:\Users\Tomek\Desktop\PLOP\baza\bin\Debug\sklad.txt");
+            string[] linie = File.ReadAllLines(path);
 
             zawodnik[] zw = new zawodnik[linie.Length];
             for (int i = 0; i < linie.Length; ++i)
@@ -59,11 +63,105 @@ namespace WpfApplication1
             textBoxnazwisko10.Text = punkty[9][1];
             textBoximie11.Text = punkty[10][0];
             textBoxnazwisko11.Text = punkty[10][1];
+            //textBoximie12.Text = punkty[11][0];
+            //textBoxnazwisko12.Text = punkty[11][1];
+            //textBoximie13.Text = punkty[12][0];
+            //textBoxnazwisko13.Text = punkty[12][1];
+            //textBoximie14.Text = punkty[13][0];
+            //textBoxnazwisko14.Text = punkty[13][1];
+            //textBoximie15.Text = punkty[14][0];
+            //textBoxnazwisko15.Text = punkty[14][1];
+            //textBoximie16.Text = punkty[15][0];
+            //textBoxnazwisko16.Text = punkty[15][1];
+            //textBoximie17.Text = punkty[16][0];
+            //textBoxnazwisko17.Text = punkty[16][1];
         }
 
         private void buttonZaiwterdz_Click(object sender, RoutedEventArgs e)
         {
+            InitializeComponent();
+            z = ListaZawodnikow.OdczytajTXT();
+            sklad = new ObservableCollection<zawodnik>(z.lista);
+            foreach (zawodnik k in sklad)
+            {
+                if (k.Imie == textBoximie1.Text & k.Nazwisko == textBoxnazwisko1.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas1.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole1.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty1.Text);
+                }
+                if (k.Imie == textBoximie2.Text & k.Nazwisko == textBoxnazwisko2.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas2.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole2.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty2.Text);
+                }
+                if (k.Imie == textBoximie3.Text & k.Nazwisko == textBoxnazwisko3.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas3.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole3.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty3.Text);
+                }
+                if (k.Imie == textBoximie4.Text & k.Nazwisko == textBoxnazwisko4.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas4.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole4.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty4.Text);
+                }
+                if (k.Imie == textBoximie5.Text & k.Nazwisko == textBoxnazwisko5.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas5.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole5.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty5.Text);
+                }
+                if (k.Imie == textBoximie6.Text & k.Nazwisko == textBoxnazwisko6.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas6.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole6.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty6.Text);
+                }
+                if (k.Imie == textBoximie7.Text & k.Nazwisko == textBoxnazwisko7.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas7.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole7.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty7.Text);
+                }
+                if (k.Imie == textBoximie8.Text & k.Nazwisko == textBoxnazwisko8.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas8.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole8.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty8.Text);
+                }
+                if (k.Imie == textBoximie9.Text & k.Nazwisko == textBoxnazwisko9.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas9.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole9.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty9.Text);
+                }
+                if (k.Imie == textBoximie10.Text & k.Nazwisko == textBoxnazwisko10.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas10.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole10.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty10.Text);
+                }
+                if (k.Imie == textBoximie11.Text & k.Nazwisko == textBoxnazwisko11.Text)
+                {
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas11.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole11.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty11.Text);
+                }
+            }
+
+            FileStream plik = new FileStream(@"..\Debug\zawodnicy.txt", FileMode.Create);
+            StreamWriter SW = new StreamWriter(plik);
+
+            foreach (zawodnik zaw in z.lista)
+            {
+                SW.WriteLine(zaw.Imie + " " + zaw.Nazwisko + " " + zaw.Pozycja + " " + zaw.Minuty + " " + zaw.Gole + " " + zaw.Asysty + " " + zaw.Odbiory + " " + zaw.Obrony);
+            }
+            SW.Close();
             this.Close();
-        }
+        
+    }
     }
 }

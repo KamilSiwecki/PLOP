@@ -1,30 +1,12 @@
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\bin\Debug\baza.exe.config
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\bin\Debug\baza.exe
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\bin\Debug\baza.pdb
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\obj\Debug\baza.exe
-c:\users\pitek\documents\visual studio 2015\Projects\baza\baza\obj\Debug\baza.pdb
-C:\Users\Kamil\Desktop\baza\baza\baza\bin\Debug\baza.exe.config
-C:\Users\Kamil\Desktop\baza\baza\baza\bin\Debug\baza.exe
-C:\Users\Kamil\Desktop\baza\baza\baza\bin\Debug\baza.pdb
-C:\Users\Kamil\Desktop\baza\baza\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
-C:\Users\Kamil\Desktop\baza\baza\baza\obj\Debug\baza.exe
-C:\Users\Kamil\Desktop\baza\baza\baza\obj\Debug\baza.pdb
-C:\Users\Kamil\Desktop\PLOP\baza\bin\Debug\baza.exe.config
-C:\Users\Kamil\Desktop\PLOP\baza\bin\Debug\baza.exe
-C:\Users\Kamil\Desktop\PLOP\baza\bin\Debug\baza.pdb
-C:\Users\Kamil\Desktop\PLOP\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
-C:\Users\Kamil\Desktop\PLOP\baza\obj\Debug\baza.exe
-C:\Users\Kamil\Desktop\PLOP\baza\obj\Debug\baza.pdb
-C:\Users\ROBSSSON\Desktop\PLOP\baza\bin\Debug\baza.exe.config
-C:\Users\ROBSSSON\Desktop\PLOP\baza\obj\Debug\baza.exe
-C:\Users\ROBSSSON\Desktop\PLOP\baza\obj\Debug\baza.pdb
-C:\Users\ROBSSSON\Desktop\PLOP\baza\bin\Debug\baza.exe
-C:\Users\ROBSSSON\Desktop\PLOP\baza\bin\Debug\baza.pdb
-C:\Users\ROBSSSON\Desktop\PLOP\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\bin\Debug\baza.exe.config
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\bin\Debug\baza.exe
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\bin\Debug\baza.pdb
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\obj\Debug\baza.exe
-C:\Users\Kamil\Desktop\PLOP\PLOP\baza\obj\Debug\baza.pdb
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\bin\Debug\baza.exe.config
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\bin\Debug\baza.exe
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\bin\Debug\baza.pdb
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\obj\Debug\baza.exe
+C:\Users\pitek\Documents\Visual Studio 2015\Projects\PLOP-kopia\baza\obj\Debug\baza.pdb
+D:\PLOP-kopia\baza\bin\Debug\baza.exe.config
+D:\PLOP-kopia\baza\bin\Debug\baza.exe
+D:\PLOP-kopia\baza\bin\Debug\baza.pdb
+D:\PLOP-kopia\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
+D:\PLOP-kopia\baza\obj\Debug\baza.exe
+D:\PLOP-kopia\baza\obj\Debug\baza.pdb

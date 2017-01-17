@@ -14,7 +14,6 @@ namespace baza
             
             Console.WriteLine(ListaZawodnikow.OdczytajTXT());
             Console.ReadKey();
-            //Proba githuba
 
         }
     }

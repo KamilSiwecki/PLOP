@@ -36,9 +36,10 @@ namespace baza
         }
         public static ListaZawodnikow OdczytajTXT()
         {
+            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\zawodnicy.txt");
             ListaZawodnikow lista = new ListaZawodnikow();
             List<List<string>> punkty = new List<List<string>>();
-            string[] linie = File.ReadAllLines(@"C:\Users\Tomek\Desktop\PLOP\baza\bin\Debug\zawodnicy.txt");
+            string[] linie = File.ReadAllLines(path);
 
             zawodnik[] zw = new zawodnik[linie.Length];
             for (int i = 0; i < linie.Length ; ++i)
