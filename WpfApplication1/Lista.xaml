@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="Lista" Height="420.389" Width="336.907">
-    <Grid Margin="0,0,-2,2.333" HorizontalAlignment="Left" Width="332">
+        Title="Lista" Height="430.389" Width="346.907">
+    <Grid Margin="0,0,-8,2" HorizontalAlignment="Left" Width="347">
         <Grid.Background>
             <ImageBrush ImageSource="boisko.jpg"/>
         </Grid.Background>
@@ -14,7 +14,7 @@
         <Button x:Name="buttonStatystyki" Content="Pokaż statystyki" HorizontalAlignment="Left" Height="56" Margin="188,57,0,0" VerticalAlignment="Top" Width="128" Click="buttonStatystyki_Click"/>
         <Button x:Name="button_Dodaj" Content="Dodaj zawodnika" HorizontalAlignment="Left" Height="57" Margin="187,137,0,0" VerticalAlignment="Top" Width="135" Click="button_Dodaj_Click"/>
         <Button x:Name="button_Usun" Content="Usun zawodnika" HorizontalAlignment="Left" Height="59" Margin="190,232,0,0" VerticalAlignment="Top" Width="134" Click="button_Usun_Click"/>
-        <Button x:Name="button_zamknij" Content="Zamknij" HorizontalAlignment="Left" Height="59" Margin="246,332,0,-2" VerticalAlignment="Top" Width="85" Click="button_zamknij_Click"/>
+        <Button x:Name="button_zamknij" Content="Zamknij" HorizontalAlignment="Left" Height="59" Margin="239,329,0,0" VerticalAlignment="Top" Width="85" Click="button_zamknij_Click"/>
 
     </Grid>
 </Window>

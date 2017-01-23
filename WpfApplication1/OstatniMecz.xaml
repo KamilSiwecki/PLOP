@@ -5,42 +5,142 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="OstatniMecz" Height="438" Width="774">
-    <Grid Margin="0,0,2,-1">
-        <Grid.Background>
-            <ImageBrush ImageSource="pilka_nozna_boisko.jpg"/>
-        </Grid.Background>
-        <TextBox x:Name="textBoximie1" HorizontalAlignment="Left" Height="23" Margin="48,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko1" HorizontalAlignment="Left" Height="23" Margin="154,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie2" HorizontalAlignment="Left" Height="23" Margin="48,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie3" HorizontalAlignment="Left" Height="23" Margin="48,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie4" HorizontalAlignment="Left" Height="23" Margin="48,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie5" HorizontalAlignment="Left" Height="23" Margin="48,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie6" HorizontalAlignment="Left" Height="23" Margin="48,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie7" HorizontalAlignment="Left" Height="23" Margin="48,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie8" HorizontalAlignment="Left" Height="23" Margin="48,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie9" HorizontalAlignment="Left" Height="23" Margin="48,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie10" HorizontalAlignment="Left" Height="23" Margin="48,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoximie11" HorizontalAlignment="Left" Height="23" Margin="48,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko2" HorizontalAlignment="Left" Height="23" Margin="154,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko3" HorizontalAlignment="Left" Height="23" Margin="154,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko4" HorizontalAlignment="Left" Height="23" Margin="154,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko5" HorizontalAlignment="Left" Height="23" Margin="154,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko6" HorizontalAlignment="Left" Height="23" Margin="154,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko7" HorizontalAlignment="Left" Height="23" Margin="154,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko8" HorizontalAlignment="Left" Height="23" Margin="154,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko9" HorizontalAlignment="Left" Height="23" Margin="154,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko10" HorizontalAlignment="Left" Height="23" Margin="154,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <TextBox x:Name="textBoxnazwisko11" HorizontalAlignment="Left" Height="23" Margin="154,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
-        <Label x:Name="label" Content="pierwszy&#xD;&#xA;sklad" HorizontalAlignment="Left" Height="47" Margin="246,0,0,0" VerticalAlignment="Top" Width="56" Background="Transparent"/>
-        <Label x:Name="label1" Content="gole" HorizontalAlignment="Left" Height="28" Margin="378,10,0,0" VerticalAlignment="Top" Width="38" Background="Transparent"/>
-        <Label x:Name="label1_Copy" Content="asysty" HorizontalAlignment="Left" Height="28" Margin="438,10,0,0" VerticalAlignment="Top" Width="55" Background="Transparent"/>
-        <TextBox x:Name="textBoxCzas1" HorizontalAlignment="Left" Height="23" Margin="246,52,0,0" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="47" Background="Transparent"/>
-        <TextBox x:Name="textBoxGole1" HorizontalAlignment="Left" Height="23" Margin="379,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Background="Transparent"/>
-        <TextBox x:Name="textBoxAsysty1" HorizontalAlignment="Left" Height="23" Margin="438,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="36" Background="Transparent"/>
-        <Label x:Name="label1_Copy1" Content="zmiana" HorizontalAlignment="Left" Height="28" Margin="307,10,0,0" VerticalAlignment="Top" Width="49" Background="Transparent"/>
-        <TextBox x:Name="textBoxGole1_Copy" HorizontalAlignment="Left" Height="23" Margin="307,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="37" Background="Transparent"/>
-        <Button x:Name="buttonZaiwterdz" Content="Zatwierdź" HorizontalAlignment="Left" Height="54" Margin="343,184,0,0" VerticalAlignment="Top" Width="95" Click="buttonZaiwterdz_Click"/>
+        Title="Ostatni Mecz" Height="607.375" Width="774">
+    <ScrollViewer MaxHeight="774" VerticalScrollBarVisibility="Hidden">
 
-    </Grid>
+
+
+
+        <Grid Block.TextAlignment="Center" Height="577">
+            <Grid.Background>
+                <ImageBrush ImageSource="pilka_nozna_boisko.jpg"/>
+            </Grid.Background>
+            <TextBox x:Name="textBoximie1" HorizontalAlignment="Left" Height="23" Margin="50,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie2" HorizontalAlignment="Left" Height="23" Margin="50,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie3" HorizontalAlignment="Left" Height="23" Margin="50,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie4" HorizontalAlignment="Left" Height="23" Margin="50,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie5" HorizontalAlignment="Left" Height="23" Margin="50,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie6" HorizontalAlignment="Left" Height="23" Margin="50,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie7" HorizontalAlignment="Left" Height="23" Margin="50,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie8" HorizontalAlignment="Left" Height="23" Margin="50,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie9" HorizontalAlignment="Left" Height="23" Margin="50,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie10" HorizontalAlignment="Left" Height="23" Margin="50,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie11" HorizontalAlignment="Left" Height="23" Margin="50,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie12" HorizontalAlignment="Left" Height="23" Margin="50,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie13" HorizontalAlignment="Left" Height="23" Margin="50,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie14" HorizontalAlignment="Left" Height="23" Margin="50,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie15" HorizontalAlignment="Left" Height="23" Margin="50,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie16" HorizontalAlignment="Left" Height="23" Margin="50,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoximie17" HorizontalAlignment="Left" Height="23" Margin="50,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko1" HorizontalAlignment="Left" Height="23" Margin="150,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko2" HorizontalAlignment="Left" Height="23" Margin="150,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko3" HorizontalAlignment="Left" Height="23" Margin="150,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko4" HorizontalAlignment="Left" Height="23" Margin="150,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko5" HorizontalAlignment="Left" Height="23" Margin="150,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko6" HorizontalAlignment="Left" Height="23" Margin="150,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko7" HorizontalAlignment="Left" Height="23" Margin="150,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko8" HorizontalAlignment="Left" Height="23" Margin="150,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko9" HorizontalAlignment="Left" Height="23" Margin="150,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko10" HorizontalAlignment="Left" Height="23" Margin="150,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko11" HorizontalAlignment="Left" Height="23" Margin="150,350,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko12" HorizontalAlignment="Left" Height="23" Margin="150,380,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko13" HorizontalAlignment="Left" Height="23" Margin="150,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko14" HorizontalAlignment="Left" Height="23" Margin="150,440,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko15" HorizontalAlignment="Left" Height="23" Margin="150,470,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko16" HorizontalAlignment="Left" Height="23" Margin="150,500,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxnazwisko17" HorizontalAlignment="Left" Height="23" Margin="150,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Background="Transparent"/>
+            <TextBox x:Name="textBoxCzas1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,50,0,0"/>
+            <TextBox x:Name="textBoxCzas2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,80,0,0"/>
+            <TextBox x:Name="textBoxCzas3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,110,0,0"/>
+            <TextBox x:Name="textBoxCzas4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,140,0,0"/>
+            <TextBox x:Name="textBoxCzas5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,170,0,0"/>
+            <TextBox x:Name="textBoxCzas6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,200,0,0"/>
+            <TextBox x:Name="textBoxCzas7" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,230,0,0"/>
+            <TextBox x:Name="textBoxCzas8" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,260,0,0"/>
+            <TextBox x:Name="textBoxCzas9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,290,0,0"/>
+            <TextBox x:Name="textBoxCzas10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,320,0,0"/>
+            <TextBox x:Name="textBoxCzas11" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="90" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,350,0,0"/>
+            <TextBox x:Name="textBoxCzas12" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,380,0,0"/>
+            <TextBox x:Name="textBoxCzas13" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,410,0,0"/>
+            <TextBox x:Name="textBoxCzas14" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,440,0,0"/>
+            <TextBox x:Name="textBoxCzas15" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,470,0,0"/>
+            <TextBox x:Name="textBoxCzas16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,500,0,0"/>
+            <TextBox x:Name="textBoxCzas17" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="250,530,0,0"/>
+            <TextBox x:Name="textBoxGole1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,50,0,0"/>
+            <TextBox x:Name="textBoxGole2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,80,0,0"/>
+            <TextBox x:Name="textBoxGole3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,110,0,0"/>
+            <TextBox x:Name="textBoxGole4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,140,0,0"/>
+            <TextBox x:Name="textBoxGole5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,170,0,0"/>
+            <TextBox x:Name="textBoxGole6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,200,0,0"/>
+            <TextBox x:Name="textBoxGole7" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,230,0,0"/>
+            <TextBox x:Name="textBoxGole8" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,260,0,0"/>
+            <TextBox x:Name="textBoxGole9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,290,0,0"/>
+            <TextBox x:Name="textBoxGole10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,320,0,0"/>
+            <TextBox x:Name="textBoxGole11" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,350,0,0"/>
+            <TextBox x:Name="textBoxGole12" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,380,0,0"/>
+            <TextBox x:Name="textBoxGole13" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,410,0,0"/>
+            <TextBox x:Name="textBoxGole14" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,440,0,0"/>
+            <TextBox x:Name="textBoxGole15" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,470,0,0"/>
+            <TextBox x:Name="textBoxGole16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,500,0,0"/>
+            <TextBox x:Name="textBoxGole17" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="310,530,0,0"/>
+            <TextBox x:Name="textBoxAsysty1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,50,0,0"/>
+            <TextBox x:Name="textBoxAsysty2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,80,0,0"/>
+            <TextBox x:Name="textBoxAsysty3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,110,0,0"/>
+            <TextBox x:Name="textBoxAsysty4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,140,0,0"/>
+            <TextBox x:Name="textBoxAsysty5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,170,0,0"/>
+            <TextBox x:Name="textBoxAsysty6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,200,0,0"/>
+            <TextBox x:Name="textBoxAsysty7" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,230,0,0"/>
+            <TextBox x:Name="textBoxAsysty8" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,260,0,0"/>
+            <TextBox x:Name="textBoxAsysty9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,290,0,0"/>
+            <TextBox x:Name="textBoxAsysty10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,320,0,0"/>
+            <TextBox x:Name="textBoxAsysty11" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,350,0,0"/>
+            <TextBox x:Name="textBoxAsysty12" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,380,0,0"/>
+            <TextBox x:Name="textBoxAsysty13" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,410,0,0"/>
+            <TextBox x:Name="textBoxAsysty14" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,440,0,0"/>
+            <TextBox x:Name="textBoxAsysty15" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,470,0,0"/>
+            <TextBox x:Name="textBoxAsysty16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,500,0,0"/>
+            <TextBox x:Name="textBoxAsysty17" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="370,530,0,0"/>
+            <TextBox x:Name="textBoxOdbiory1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,50,0,0"/>
+            <TextBox x:Name="textBoxOdbiory2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,80,0,0"/>
+            <TextBox x:Name="textBoxOdbiory3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,110,0,0"/>
+            <TextBox x:Name="textBoxOdbiory4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,140,0,0"/>
+            <TextBox x:Name="textBoxOdbiory5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,170,0,0"/>
+            <TextBox x:Name="textBoxOdbiory6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,200,0,0"/>
+            <TextBox x:Name="textBoxOdbiory7" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,230,0,0"/>
+            <TextBox x:Name="textBoxOdbiory8" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,260,0,0"/>
+            <TextBox x:Name="textBoxOdbiory9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,290,0,0"/>
+            <TextBox x:Name="textBoxOdbiory10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,320,0,0"/>
+            <TextBox x:Name="textBoxOdbiory11" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,350,0,0"/>
+            <TextBox x:Name="textBoxOdbiory12" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,380,0,0"/>
+            <TextBox x:Name="textBoxOdbiory13" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,410,0,0"/>
+            <TextBox x:Name="textBoxOdbiory14" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,440,0,0"/>
+            <TextBox x:Name="textBoxOdbiory15" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,470,0,0"/>
+            <TextBox x:Name="textBoxOdbiory16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,500,0,0"/>
+            <TextBox x:Name="textBoxOdbiory17" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="430,530,0,0"/>
+            <TextBox x:Name="textBoxObrony1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,50,0,0"/>
+            <TextBox x:Name="textBoxObrony2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,80,0,0"/>
+            <TextBox x:Name="textBoxObrony3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,110,0,0"/>
+            <TextBox x:Name="textBoxObrony4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,140,0,0"/>
+            <TextBox x:Name="textBoxObrony5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,170,0,0"/>
+            <TextBox x:Name="textBoxObrony6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,200,0,0"/>
+            <TextBox x:Name="textBoxObrony7" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,230,0,0"/>
+            <TextBox x:Name="textBoxObrony8" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,260,0,0"/>
+            <TextBox x:Name="textBoxObrony9" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,290,0,0"/>
+            <TextBox x:Name="textBoxObrony10" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,320,0,0"/>
+            <TextBox x:Name="textBoxObrony11" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,350,0,0"/>
+            <TextBox x:Name="textBoxObrony12" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,380,0,0"/>
+            <TextBox x:Name="textBoxObrony13" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,410,0,0"/>
+            <TextBox x:Name="textBoxObrony14" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,440,0,0"/>
+            <TextBox x:Name="textBoxObrony15" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,470,0,0"/>
+            <TextBox x:Name="textBoxObrony16" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,500,0,0"/>
+            <TextBox x:Name="textBoxObrony17" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="40" Background="Transparent" Margin="490,530,0,0"/>
+            <Label x:Name="label" Content="Pierwszy&#xD;&#xA;sklad" HorizontalAlignment="Left" Height="47" Margin="250,0,0,0" VerticalAlignment="Top" Width="44" Background="Transparent"/>
+            <Label x:Name="label1_Copy1" Content="Gole" HorizontalAlignment="Left" Height="28" Margin="305,10,0,0" VerticalAlignment="Top" Width="49" Background="Transparent" />
+            <Label x:Name="label1" Content="Asysty" HorizontalAlignment="Left" Height="28" Margin="365,10,0,0" VerticalAlignment="Top" Width="49" Background="Transparent"/>
+            <Label x:Name="label1_Copy2" Content="Odbiory" HorizontalAlignment="Left" Height="28" Margin="420,10,0,0" VerticalAlignment="Top" Width="55" Background="Transparent"/>
+            <Label x:Name="label1_Copy3" Content="Obrony" HorizontalAlignment="Left" Height="28" Margin="480,10,0,0" VerticalAlignment="Top" Width="55" Background="Transparent"/>
+            <Button x:Name="buttonZaiwterdz" Content="Zatwierdź" HorizontalAlignment="Left" Height="54" Margin="620,460,0,0" VerticalAlignment="Top" Width="95" Click="buttonZaiwterdz_Click"/>
+
+        </Grid>
+    </ScrollViewer>
 </Window>
