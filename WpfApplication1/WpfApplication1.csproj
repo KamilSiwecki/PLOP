@@ -142,6 +142,10 @@
       <Project>{26782A38-9B47-43D5-83C0-FD213D1C6485}</Project>
       <Name>baza</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WpfApplication3\WpfApplication3.csproj">
+      <Project>{86a53eb7-0cf1-4066-b9eb-66e3703742c7}</Project>
+      <Name>WpfApplication3</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="tlo.jpg" />
@@ -151,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pilka_nozna_boisko.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PLOP3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

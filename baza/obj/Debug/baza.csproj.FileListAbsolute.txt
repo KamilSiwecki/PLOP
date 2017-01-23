@@ -10,3 +10,9 @@ D:\PLOP-kopia\baza\bin\Debug\baza.pdb
 D:\PLOP-kopia\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
 D:\PLOP-kopia\baza\obj\Debug\baza.exe
 D:\PLOP-kopia\baza\obj\Debug\baza.pdb
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\bin\Debug\baza.exe.config
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\bin\Debug\baza.exe
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\bin\Debug\baza.pdb
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\obj\Debug\baza.csprojResolveAssemblyReference.cache
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\obj\Debug\baza.exe
+C:\Users\Filip\Desktop\FTW\PLOP-kopia\baza\obj\Debug\baza.pdb

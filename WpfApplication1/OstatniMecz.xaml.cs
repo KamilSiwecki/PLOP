@@ -27,55 +27,58 @@ namespace WpfApplication1
         public OstatniMecz()
         {
             InitializeComponent();
-            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\sklad.txt");
-            ListaZawodnikow ostatni = new ListaZawodnikow();
-            List<List<string>> punkty = new List<List<string>>();
-            string[] linie = File.ReadAllLines(path);
+            
+                string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\sklad.txt");
+                ListaZawodnikow ostatni = new ListaZawodnikow();
+                List<List<string>> punkty = new List<List<string>>();
+                string[] linie = File.ReadAllLines(path);
 
-            zawodnik[] zw = new zawodnik[linie.Length];
-            for (int i = 0; i < linie.Length; ++i)
-            {
-                punkty.Add(new List<string>());
-                foreach (string slowo in linie[i].Split(' '))
+                zawodnik[] zw = new zawodnik[linie.Length];
+                for (int i = 0; i < linie.Length; ++i)
                 {
-                    punkty[i].Add(slowo);
+                    punkty.Add(new List<string>());
+                    foreach (string slowo in linie[i].Split(' '))
+                    {
+                        punkty[i].Add(slowo);
+                    }
                 }
-            }
-            textBoximie1.Text = punkty[0][0];
-            textBoxnazwisko1.Text = punkty[0][1];
-            textBoximie2.Text = punkty[1][0];
-            textBoxnazwisko2.Text = punkty[1][1];
-            textBoximie3.Text = punkty[2][0];
-            textBoxnazwisko3.Text = punkty[2][1];
-            textBoximie4.Text = punkty[3][0];
-            textBoxnazwisko4.Text = punkty[3][1];
-            textBoximie5.Text = punkty[4][0];
-            textBoxnazwisko5.Text = punkty[4][1];
-            textBoximie6.Text = punkty[5][0];
-            textBoxnazwisko6.Text = punkty[5][1];
-            textBoximie7.Text = punkty[6][0];
-            textBoxnazwisko7.Text = punkty[6][1];
-            textBoximie8.Text = punkty[7][0];
-            textBoxnazwisko8.Text = punkty[7][1];
-            textBoximie9.Text = punkty[8][0];
-            textBoxnazwisko9.Text = punkty[8][1];
-            textBoximie10.Text = punkty[9][0];
-            textBoxnazwisko10.Text = punkty[9][1];
-            textBoximie11.Text = punkty[10][0];
-            textBoxnazwisko11.Text = punkty[10][1];
-            //textBoximie12.Text = punkty[11][0];
-            //textBoxnazwisko12.Text = punkty[11][1];
-            //textBoximie13.Text = punkty[12][0];
-            //textBoxnazwisko13.Text = punkty[12][1];
-            //textBoximie14.Text = punkty[13][0];
-            //textBoxnazwisko14.Text = punkty[13][1];
-            //textBoximie15.Text = punkty[14][0];
-            //textBoxnazwisko15.Text = punkty[14][1];
-            //textBoximie16.Text = punkty[15][0];
-            //textBoxnazwisko16.Text = punkty[15][1];
-            //textBoximie17.Text = punkty[16][0];
-            //textBoxnazwisko17.Text = punkty[16][1];
-        }
+                textBoximie1.Text = punkty[0][0];
+                textBoxnazwisko1.Text = punkty[0][1];
+                textBoximie2.Text = punkty[1][0];
+                textBoxnazwisko2.Text = punkty[1][1];
+                textBoximie3.Text = punkty[2][0];
+                textBoxnazwisko3.Text = punkty[2][1];
+                textBoximie4.Text = punkty[3][0];
+                textBoxnazwisko4.Text = punkty[3][1];
+                textBoximie5.Text = punkty[4][0];
+                textBoxnazwisko5.Text = punkty[4][1];
+                textBoximie6.Text = punkty[5][0];
+                textBoxnazwisko6.Text = punkty[5][1];
+                textBoximie7.Text = punkty[6][0];
+                textBoxnazwisko7.Text = punkty[6][1];
+                textBoximie8.Text = punkty[7][0];
+                textBoxnazwisko8.Text = punkty[7][1];
+                textBoximie9.Text = punkty[8][0];
+                textBoxnazwisko9.Text = punkty[8][1];
+                textBoximie10.Text = punkty[9][0];
+                textBoxnazwisko10.Text = punkty[9][1];
+                textBoximie11.Text = punkty[10][0];
+                textBoxnazwisko11.Text = punkty[10][1];
+                textBoximie12.Text = punkty[11][0];
+                textBoxnazwisko12.Text = punkty[11][1];
+                textBoximie13.Text = punkty[12][0];
+                textBoxnazwisko13.Text = punkty[12][1];
+                textBoximie14.Text = punkty[13][0];
+                textBoxnazwisko14.Text = punkty[13][1];
+                textBoximie15.Text = punkty[14][0];
+                textBoxnazwisko15.Text = punkty[14][1];
+                textBoximie16.Text = punkty[15][0];
+                textBoxnazwisko16.Text = punkty[15][1];
+                textBoximie17.Text = punkty[16][0];
+                textBoxnazwisko17.Text = punkty[16][1];
+            
+         }
+
 
         private void buttonZaiwterdz_Click(object sender, RoutedEventArgs e)
         {
@@ -160,8 +163,13 @@ namespace WpfApplication1
                 SW.WriteLine(zaw.Imie + " " + zaw.Nazwisko + " " + zaw.Pozycja + " " + zaw.Minuty + " " + zaw.Gole + " " + zaw.Asysty + " " + zaw.Odbiory + " " + zaw.Obrony);
             }
             SW.Close();
+            string path1 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\odczytany.txt");
+            FileStream plik1 = new FileStream(path1, FileMode.Create);
+            StreamWriter SW1 = new StreamWriter(plik1);
+            SW1.WriteLine("tak");
+            SW1.Close();
+
             this.Close();
-        
-    }
+        }
     }
 }

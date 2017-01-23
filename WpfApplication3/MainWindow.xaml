@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication3"
         mc:Ignorable="d"
-        Title="P.L.O.P. - Professional League Origanitor Program" Height="540" Width="960" >
+        Title="P.L.O.P. - Professional League Origintor Program v1.0" Height="540" Width="960" >
     <Grid Margin="0,0,2,-2">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="19*"/>
@@ -29,16 +29,8 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Label x:Name="label" Content="JUNIORZY" Grid.Column="2" HorizontalAlignment="Left" Height="59" Margin="79,397,0,0" VerticalAlignment="Top" Width="125" Foreground="White" RenderTransformOrigin="0.5,0.5" FontSize="24">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform ScaleY="0.999"/>
-                    <SkewTransform AngleY="0.748" AngleX="-3.882"/>
-                    <RotateTransform Angle="20.225"/>
-                    <TranslateTransform X="-2.122" Y="-0.172"/>
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
+        <Image x:Name="image" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="240" Margin="10,10,0,0" VerticalAlignment="Top" Width="337" Source="PLOP3.png"/>
+        <Button x:Name="button" Content="SENIORZY" Grid.Column="2" HorizontalAlignment="Left" Height="81" Margin="58,381,0,0" VerticalAlignment="Top" Width="135" Opacity="0" Click="button_Click" RenderTransformOrigin="2.034,0.697"/>
 
     </Grid>
 </Window>

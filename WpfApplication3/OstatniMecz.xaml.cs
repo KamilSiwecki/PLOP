@@ -86,11 +86,11 @@ namespace WpfApplication3
             sklad = new ObservableCollection<zawodnik>(z.lista);
             foreach (zawodnik k in sklad)
             {
-                if(k.Imie == textBoximie1.Text & k.Nazwisko == textBoxnazwisko1.Text)
+                if (k.Imie == textBoximie1.Text & k.Nazwisko == textBoxnazwisko1.Text)
                 {
-                   k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas1.Text);
-                   k.Gole += Convert.ToInt32(textBoxGole1.Text);
-                   k.Asysty += Convert.ToInt32(textBoxAsysty1.Text);
+                    k.Minuty = k.Minuty + Convert.ToInt32(textBoxCzas1.Text);
+                    k.Gole += Convert.ToInt32(textBoxGole1.Text);
+                    k.Asysty += Convert.ToInt32(textBoxAsysty1.Text);
                 }
                 if (k.Imie == textBoximie2.Text & k.Nazwisko == textBoxnazwisko2.Text)
                 {
@@ -162,6 +162,11 @@ namespace WpfApplication3
                 SW.WriteLine(zaw.Imie + " " + zaw.Nazwisko + " " + zaw.Pozycja + " " + zaw.Minuty + " " + zaw.Gole + " " + zaw.Asysty + " " + zaw.Odbiory + " " + zaw.Obrony);
             }
             SW.Close();
+            string path1 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\odczytanyj.txt");
+            FileStream plik1 = new FileStream(path1, FileMode.Create);
+            StreamWriter SW1 = new StreamWriter(plik1);
+            SW1.WriteLine("tak");
+            SW1.Close();
 
             this.Close();
         }

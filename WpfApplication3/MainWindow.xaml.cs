@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -12,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+//using WpfApplication1;
+
 
 namespace WpfApplication3
 {
@@ -23,6 +27,15 @@ namespace WpfApplication3
         public MainWindow()
         {
             InitializeComponent();
+            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\wejscie1.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(path);
+            player.Play();
+            string path1 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\odczytanyj.txt");
+            string odczytany = File.ReadAllText(path1);
+            if (odczytany == "nie")
+            {
+                MessageBox.Show("Odczytaj ostatni mecz!");
+            }
         }
 
         private void ButtonLista_Click(object sender, RoutedEventArgs e)
@@ -44,8 +57,25 @@ namespace WpfApplication3
 
         private void ButtonWyjsciowySklad_Copy_Click(object sender, RoutedEventArgs e)
         {
-            OstatniMecz okno = new OstatniMecz();
-            okno.ShowDialog();
+            string path1 = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\odczytanyj.txt");
+            string odczytany = File.ReadAllText(path1);
+            if (odczytany == "tak")
+            {
+                MessageBox.Show("Ostatni mecz był juz uzupełniony");
+
+            }
+            else
+            {
+                OstatniMecz okno = new OstatniMecz();
+                okno.ShowDialog();
+            }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            //WpfApplication1.MainWindow okno = new WpfApplication1.MainWindow();
+            //this.Close();
+            //okno.ShowDialog();
         }
     }
 }

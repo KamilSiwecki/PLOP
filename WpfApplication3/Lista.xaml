@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication3"
         mc:Ignorable="d"
-        Title="Lista" Height="420.389" Width="336.907">
-    <Grid Margin="0,0,-2,2.333" HorizontalAlignment="Left" Width="332">
+        Title="Lista" Height="440.389" Width="356.907">
+    <Grid Margin="0,0,0,2" HorizontalAlignment="Left" Width="347">
         <Grid.Background>
             <ImageBrush ImageSource="boisko.jpg"/>
         </Grid.Background>

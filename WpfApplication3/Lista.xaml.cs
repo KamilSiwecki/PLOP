@@ -75,7 +75,7 @@ namespace WpfApplication3
             {
                 sklad.RemoveAt(zaznaczony);
                 z.lista.RemoveAt(zaznaczony);
-                FileStream plik = new FileStream(@"C:\Users\ROBSSSON\Desktop\PLOP\baza\bin\Debug\zawodnicyj.txt", FileMode.Create);
+                FileStream plik = new FileStream(@"..\Debug\zawodnicyj.txt", FileMode.Create);
                 StreamWriter SW = new StreamWriter(plik);
 
                 foreach (zawodnik zaw in z.lista)

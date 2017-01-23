@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApplication3"
         mc:Ignorable="d"
         Title="Ustawienie4_4_2" Height="534.086" Width="656">
-    <Grid Margin="10,0,2,-1">
+    <Grid Margin="0,0,-8,-1">
         <Grid.Background>
             <ImageBrush ImageSource="pilka_nozna_boisko.jpg"/>
         </Grid.Background>
@@ -28,6 +28,7 @@
         <ComboBox x:Name="comboBox14" HorizontalAlignment="Left" Height="28" Margin="19,375,0,0" VerticalAlignment="Top" Width="119"/>
         <ComboBox x:Name="comboBox15" HorizontalAlignment="Left" Height="28" Margin="179,375,0,0" VerticalAlignment="Top" Width="119"/>
         <ComboBox x:Name="comboBox16" HorizontalAlignment="Left" Height="28" Margin="333,375,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label x:Name="label" Content="Ławka rezerwowych" HorizontalAlignment="Left" Height="26" Margin="19,298,0,0" VerticalAlignment="Top" Width="119" TextBlock.Foreground="Blue"/>
 
     </Grid>
 </Window>

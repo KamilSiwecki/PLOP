@@ -36,6 +36,9 @@ namespace WpfApplication2
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
+            string path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\Debug\wejscie1.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(path);
+            player.Play();
             WpfApplication3.MainWindow okno = new WpfApplication3.MainWindow();
             this.Close();
             okno.ShowDialog();

@@ -40,7 +40,7 @@ namespace WpfApplication3
             
             if(z.Pozycja == "Bramkarz")
             {
-                label_gole.Content = "Puszczone bramki";
+                label_gole.Content = "Puszczone\n bramki";
                 label_asysty.Content = "Interwencje";
             }
             else
